@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY RESUME</title>
+    <style>
+    .content-box {
+      position: relative;
+      width: 80%;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    .left-para {
+      text-align: left;
+    }
+
+    .right-para {
+      text-align: right;
+    }
+    
+    .loading-table {
+      width: 100%;
+      border-collapse:collapse;
+      margin-top: 20px;
+    }
+
+    .loading-table th, .loading-table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid white;
+    }
+
+    .loading-bar {
+      width: 100%;
+      height: 20px;
+      background-color: #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-top: 10px; /* Adjust the margin as needed */
+    }
+
+    .percentage-bar {
+      height: 100%;
+      background-color: #3498db; /* Set your darkened color here */
+    }
+
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px; /* Set a max-width for the grid */
+      width: 100%;
+      margin: 0 auto; /* Center the grid horizontally */
+    }
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+      transition: opacity 0.3s;
+    }
+
+    .image-container:hover .image {
+      opacity: 0.7;
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .image-container:hover .text-overlay {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body style="background-color: white">
+    <div style="position: relative; width: 100%; max-width: 1200px; margin: 0 auto; background:url('https://images.pexels.com/photos/2341282/pexels-photo-2341282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-color: #7c7c7c;
+    background-blend-mode: darken; background-position: center;
+background-size: cover; background-repeat: no-repeat; height: 400px;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center;">
+        <img src="https://avatars.githubusercontent.com/u/155356259?v=4" alt="profilepic" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 2px;">
+      <h1 style="margin: 2px 0;">Lakshya Sharma</h1>
+      <p style="margin: 2px 0;">Software Engineer</p>
+      <a href="#">
+        <button style="margin-right: 20px;background-color:#a00202;color:white;margin-top: 10px;border-radius: 10px; padding: 10px;">Hire Me</button>
+      </a>
+      <a href="#">
+        <button style="margin-left: 20px;border-radius: 10px; padding: 10px;background-color:#a00202;color:white;">Download CV</button>
+      </a>  
+    </div>
+    <div style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); margin-bottom: 10px; ">
+        <a href="#" style="margin-right: 10px; display: inline-block;"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-icon.png" alt="Facebook" style="width: 40px; height: 40px; border-radius: 50%;"></a>
+        <a href="#" style="margin-right: 10px; display: inline-block;"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/x-social-media-round-icon.png" alt="Twitter" style="width: 40px; height: 40px; border-radius: 50%;"></a>
+        <a href="#" style="display: inline-block;"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="Instagram" style="width: 40px; height: 40px; border-radius: 50%;"></a>
+      </div>
+    </div>
+    <div class="content-box">
+      <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+        <div style="width: 48%; border: 1px solid white; padding: 10px; box-sizing: border-box;">
+          <div style="font-weight: bold; font-size: 20px">About</div>
+          <p>Hey there! I'm Lakshya, a computer science student with a passion for all things AI/ML, fintech, cybersecurity, and blockchain. I'm also a big fan of IoT and love to geek out about the latest advancements in technology.
+
+            I have a strong foundation in programming languages such as HTML, CSS, JavaScript, Python, and C, I am constantly honing my skills to stay up-to-date with the latest advancements. 
+            
+            But don't let my techy side fool you, I also have a creative side! In my free time, you can find me dabbling in art and playing a mean game of badminton.
+            
+            I'm constantly seeking out new challenges and opportunities to learn and grow in the ever-evolving world of technology. I'm a firm believer that laughter is the best medicine, so I always try to bring a bit of humor into everything I do.
+            
+            Let's connect and see if we can collaborate on some cool projects or just chat about the latest innovations in the tech world. Looking forward to connecting with you!</p>
+        </div>
+        
+        <div style="width: 48%; border: 1px solid white; padding: 10px; box-sizing: border-box;">
+          <div style="font-weight: bold; font-size: 20px;">Basic information</div>
+          <p><strong>AGE:</strong> 23</p>
+          <p><strong>EMAIL:</strong> lakshyas7999@gmail.com</p>
+          <p><strong>Phone:</strong> +91 1234567890</p>
+          <p><strong>Address:</strong> India</p>
+          <p><strong>Language:</strong> English, Hindi, Punjabi</p>
+        </div>
+      </div>
+  </div>
+  <h1 style="text-align: center; font-size:30px;">Professional Skills</h1>
+  <div class="content-box">
+      <table class="loading-table">
+    <tr>
+      <!-- Right Loading Bars -->
+      <td>
+        <div class="loading-bar">
+          <div class="percentage-bar" style="width: 80%;"></div>
+        </div>
+        <div>HTML: 80%</div>
+      </td>
+      <td>
+        <div class="loading-bar">
+          <div class="percentage-bar" style="width: 70%;"></div>
+        </div>
+        <div>CSS: 70%</div>
+      </td>
+      <td>
+        <div class="loading-bar">
+          <div class="percentage-bar" style="width: 80%;"></div>
+        </div>
+        <div>JavaScript: 80%</div>
+      </td>
+    </tr>
+  </table>
+  <table class="loading-table">
+    <tr>
+      <!-- Right Loading Bars -->
+      <td>
+        <div class="loading-bar">
+          <div class="percentage-bar" style="width: 80%;"></div>
+        </div>
+        <div>C language: 80%</div>
+      </td>
+      <td>
+        <div class="loading-bar">
+          <div class="percentage-bar" style="width: 80%;"></div>
+        </div>
+        <div>Python: 80%</div>
+      </td>
+      <td>
+        <div class="loading-bar">
+          <div class="percentage-bar" style="width: 80%;"></div>
+        </div>
+        <div>C++: 80%</div>
+      </td>
+    </tr>
+  </table>
+  </div>
+  <h1 style="text-align: center; font-size:30px;">Portfoilio</h1>
+  <div style="position: relative;
+      width: 80%;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;">
+  <div class="image-grid">
+    <div class="image-container">
+      <img class="image" src="https://images.unsplash.com/photo-1706265399459-1fe07a0c9f31?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 1">
+      <div class="text-overlay">
+        <p>Project 1</p>
+        <a href="#" style="color: white;">View More</a>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <img class="image" src="https://images.unsplash.com/photo-1706265399459-1fe07a0c9f31?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
+      <div class="text-overlay">
+        <p>Project 2</p>
+        <a href="#" style="color: white;">View More</a>
+      </div>
+    </div>
+    
+    <div class="image-container">
+      <img class="image" src="https://images.unsplash.com/photo-1706265399459-1fe07a0c9f31?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
+      <div class="text-overlay">
+        <p>Project 3</p>
+        <a href="#" style="color: white;">View More</a>
+      </div>
+    </div>
+    
+    <div class="image-container">
+      <img class="image" src="https://images.unsplash.com/photo-1706265399459-1fe07a0c9f31?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image 2">
+      <div class="text-overlay">
+        <p>Project 4</p>
+        <a href="#" style="color: white;">View More</a>
+      </div>
+    </div>
+    <!-- Add more image containers as needed -->
+
+  </div>
+   </div>
+   <h1 style="text-align: center; font-size:30px;">Work Experience</h1>
+  <div class="content-box">
+        <table>
+      <tr>
+        <th class="left-para">Ecommerce Business Owner</th>
+        <td style="text-align:left;">Founded and managed a successful Drop-shipping website during my undergraduate studies, achieving consistent growth and profitability for over 2 years.</td>
+      </tr>
+     </table>
+  </div>
+  <h1 style="text-align: center; font-size:30px;">Educational Qualifications</h1>
+  <div class="content-box">
+    <table>
+      <tr>
+        <th class="left-para">MCA</th>
+        <td style="text-align:left;"><strong>Master in Computer Application</strong><br>From Indira Gandhi National Open University<br>2023-present</td>
+      </tr>
+</table>
+</div>
+<div class="content-box">
+  <table>
+    <tr>
+      <th class="left-para">Graduation</th>
+      <td style="text-align:left;"><strong>B.com(Finance)</strong><br>From Atal Bihari Vajpayee University<br>2018-2020</td>
+    </tr>
+</table>
+</div>
+<div class="content-box">
+  <table>
+    <tr>
+      <th class="left-para">High School</th>
+      <td style="text-align:left;"><strong>Commerce And Computer science</strong><br>From Delhi Public School</td>
+    </tr>
+</table>
+</div>
+  
+  
+</body>
+</html>
